@@ -24,3 +24,16 @@ const createListItem = (champion) => {
     navList.appendChild(listItem);
 }
 
+const expandNav = (event) => {
+    const navSection = document.querySelector('.champion-nav');
+    const mainSection = document.querySelector('.main-container');
+
+    if (event === 'nav') {
+        navSection.style.display = 'none';
+        mainSection.style.display = 'flex';
+    } else {
+        navSection.style.display = 'block';
+        mainSection.style.display = 'none';
+    }
+}
+

@@ -1,0 +1,64 @@
+.champion-nav {
+    background-color: $clr-secondary;
+    width: 100%;
+    height: 100vh;
+
+    color: $clr-primary;
+    display: flex;
+    justify-content: center;
+    transition: ease-in-out all .5s;
+}
+
+.champion-nav {
+    ul {
+        text-align: center;
+        margin-top: 10vh;
+        font-size: 24px;
+
+        overflow: scroll;
+        width: 100%;
+        
+
+        input {
+           background-color: transparent;
+           outline: none;
+           border: none;
+
+           border-bottom: 4px solid white;
+           padding: 0.5em 0em;
+           color: $clr-accent-yellow;
+
+           text-align: center;
+           font-family: 'Tomorrow', sans-serif;
+           font-weight: bold;
+           font-size: 0.7em;
+           
+        }
+
+        li {
+            margin-top: 1em;
+            width: 100%;
+            padding: 0.4em;
+            &:hover {
+                background-color: $clr-primary;
+                color: $clr-secondary;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .champion-nav {
+        width: 20%;
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        ul {
+            li {
+                &:hover {
+                    background-color: $clr-primary;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;700&display=swap");
+.champion-nav {
+  background-color: #272727;
+  width: 100%;
+  height: 100vh;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: ease-in-out all .5s;
+  transition: ease-in-out all .5s;
+}
+
+.champion-nav ul {
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 24px;
+  overflow: scroll;
+  width: 100%;
+}
+
+.champion-nav ul input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 4px solid white;
+  padding: 0.5em 0em;
+  color: #FFF068;
+  text-align: center;
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+.champion-nav ul li {
+  margin-top: 1em;
+  width: 100%;
+  padding: 0.4em;
+}
+
+.champion-nav ul li:hover {
+  background-color: #FFFFFF;
+  color: #272727;
+}
+
+@media screen and (min-width: 1024px) {
+  .champion-nav {
+    width: 20%;
+  }
+  .champion-nav ::-webkit-scrollbar {
+    display: none;
+  }
+  .champion-nav ul li:hover {
+    background-color: #FFFFFF;
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: bold;
+}
+/*# sourceMappingURL=styles.css.map */

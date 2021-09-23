@@ -10,6 +10,7 @@
     <meta name="keywords" content="League of Legends, Riot Games, Champions, Documentation">
 
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="" type="images/x-icon">
 
     <script src="app.js" defer></script>
@@ -18,11 +19,15 @@
 </head>
 
 <body>
-    <div class="champion-nav">
+    <nav class="champion-nav">
         <ul id="#championList">
+            <span class="material-icons arrow" onclick="expandNav('nav')">expand_more</span>
             <input type="text" placeholder="Search..." />
         </ul>
-    </div>
+    </nav>
+    <main class="main-container">
+        <span class="material-icons arrow rotate" onclick="expandNav('main')">expand_more</span>
+    </main>
 </body>
 
 </html>

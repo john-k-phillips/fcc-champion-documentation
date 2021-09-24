@@ -40,7 +40,14 @@
             padding: 0.4em;
             &:hover {
                 background-color: $clr-primary;
-                color: $clr-secondary;
+                a {
+                    color: $clr-secondary;
+                }
+            }
+            
+            a {
+                color: $clr-primary;
+                text-decoration: none;
             }
         }
     }

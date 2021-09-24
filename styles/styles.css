@@ -40,7 +40,15 @@
 
 .champion-nav ul li:hover {
   background-color: #FFFFFF;
+}
+
+.champion-nav ul li:hover a {
   color: #272727;
+}
+
+.champion-nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .arrow {

@@ -7,6 +7,7 @@
     display: none;
     justify-content: center;
     transition: ease-in-out all .5s;
+    
 }
 
 .champion-nav {
@@ -70,6 +71,7 @@
     .champion-nav {
         display: flex;
         width: 20%;
+        border-right: 8px solid white;
         ::-webkit-scrollbar {
             display: none;
         }

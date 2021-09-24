@@ -78,6 +78,7 @@
         ul {
             margin-top: 2em;
             li {
+                cursor: pointer;
                 &:hover {
                     background-color: $clr-primary;
                 }

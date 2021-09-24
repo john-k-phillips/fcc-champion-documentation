@@ -78,6 +78,9 @@
   .champion-nav ul {
     margin-top: 2em;
   }
+  .champion-nav ul li {
+    cursor: pointer;
+  }
   .champion-nav ul li:hover {
     background-color: #FFFFFF;
   }
@@ -117,6 +120,8 @@
     max-height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: center 30%;
+       object-position: center 30%;
     border-bottom: 8px solid #FFFFFF;
   }
 }

@@ -12,7 +12,6 @@
 .champion-nav {
     ul {
         text-align: center;
-        margin-top: 0vh;
         font-size: 24px;
 
         overflow: scroll;
@@ -77,5 +76,15 @@
         .arrow {
             display: none;
         }
+    }
+
+    .main-container {
+        .arrow {
+            display: none;
+        }
+    }
+
+    body {
+        display: flex;
     }
 }

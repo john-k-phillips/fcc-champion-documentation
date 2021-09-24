@@ -30,9 +30,9 @@ const expandNav = (event) => {
 
     if (event === 'nav') {
         navSection.style.display = 'none';
-        mainSection.style.display = 'flex';
+        mainSection.style.display = 'block';
     } else {
-        navSection.style.display = 'block';
+        navSection.style.display = 'flex';
         mainSection.style.display = 'none';
     }
 }

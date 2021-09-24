@@ -9,29 +9,25 @@
     <meta name="description" content="A small website containing a documentation of league of legends champions.">
     <meta name="keywords" content="League of Legends, Riot Games, Champions, Documentation">
 
-    <link rel="stylesheet" href="styles/styles.scss">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="" type="images/x-icon">
 
-    <script src="demo_defer.js" defer></script>
+    <script src="app.js" defer></script>
 
     <title>Document</title>
 </head>
 
 <body>
-    <div>
-        <input type="text" placeholder="Search..." />
-        <ul>
-            <li>
-                Ahri
-            </li>
-            <li>
-                Ahri
-            </li>
-            <li>
-                Ahri
-            </li>
+    <nav class="champion-nav">
+        <ul id="#championList">
+            <span class="material-icons arrow" onclick="expandNav('nav')">expand_more</span>
+            <input id="input" type="text" placeholder="Search..." onkeyup="filterSearch()" />
         </ul>
-    </div>
+    </nav>
+    <main class="main-container">
+        <span class="material-icons arrow rotate" onclick="expandNav('main')">expand_more</span>
+    </main>
 </body>
 
 </html>

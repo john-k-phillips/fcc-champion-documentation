@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;700&display=swap");
+.champion-nav {
+  background-color: #272727;
+  width: 100%;
+  height: 100vh;
+  color: #FFFFFF;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: ease-in-out all .5s;
+  transition: ease-in-out all .5s;
+}
+
+.champion-nav ul {
+  text-align: center;
+  font-size: 24px;
+  overflow: scroll;
+  width: 100%;
+}
+
+.champion-nav ul input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 4px solid white;
+  padding: 0.5em 0em;
+  color: #FFF068;
+  text-align: center;
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+.champion-nav ul li {
+  margin-top: 1em;
+  width: 100%;
+  padding: 0.4em;
+}
+
+.champion-nav ul li:hover {
+  background-color: #FFFFFF;
+}
+
+.champion-nav ul li:hover a {
+  color: #272727;
+}
+
+.champion-nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.arrow {
+  margin: 30px auto;
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media screen and (min-width: 1024px) {
+  .champion-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20%;
+    border-right: 8px solid white;
+  }
+  .champion-nav ::-webkit-scrollbar {
+    display: none;
+  }
+  .champion-nav ul {
+    margin-top: 2em;
+  }
+  .champion-nav ul li:hover {
+    background-color: #FFFFFF;
+  }
+  .champion-nav .arrow {
+    display: none;
+  }
+  .main-container .arrow {
+    display: none;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.splash-art {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .splash-art {
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-bottom: 8px solid #FFFFFF;
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: bold;
+  background-color: #272727;
+}
+/*# sourceMappingURL=styles.css.map */

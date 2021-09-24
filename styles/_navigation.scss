@@ -4,7 +4,7 @@
     height: 100vh;
 
     color: $clr-primary;
-    display: flex;
+    display: none;
     justify-content: center;
     transition: ease-in-out all .5s;
 }
@@ -61,6 +61,7 @@
 
 @media screen and (min-width: 1024px) {
     .champion-nav {
+        display: flex;
         width: 20%;
         ::-webkit-scrollbar {
             display: none;

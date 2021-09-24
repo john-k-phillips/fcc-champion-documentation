@@ -3,21 +3,22 @@ let langaugeType = 'en_US';
 // ELEMENTS
 const navList = document.getElementById('#championList');
 
-fetch('https://ddragon.leagueoflegends.com/cdn/languages.json')
+fetch(`https://ddragon.leagueoflegends.com/cdn/languages.json`)
     .then(response => response.json())
     .then((data) => {
-        console.log(data);
-        langaugeType = data[1];
-        console.log(langaugeType);
+        // THIS IS TO FETCH THE LANGAUGE DATA, WHEN READY.
     })
 
-fetch('http://ddragon.leagueoflegends.com/cdn/11.19.1/data/en_US/champion.json')
-    .then(response => response.json())
-    .then((data) => {
-        Object.values(data.data).forEach(champion => {
-            createListItem(champion.id);
+const fetchChampions = (lang) => {
+    fetch(`http://ddragon.leagueoflegends.com/cdn/11.19.1/data/${langaugeType}/champion.json`)
+        .then(response => response.json())
+        .then((data) => {
+            Object.values(data.data).forEach(champion => {
+                createListItem(champion.id);
+            })
         })
-    })
+}
+
 
 // FUNCTION TO CREATE CHAMPION ITEMS ON NAVIGATION LIST
 const createListItem = (champion) => {
@@ -63,3 +64,4 @@ const filterSearch = () => {
     }
 }
 
+fetchChampions();

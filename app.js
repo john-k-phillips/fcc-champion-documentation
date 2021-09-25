@@ -41,12 +41,28 @@ const createListItem = (data) => {
 // REGENERATE BASED ON NEW CHAMPION DATA.
 const regenInfo = (champData) => {
     mainSection.innerHTML = '';
+
+    arrowElement = document.createElement('span');
+    arrowElement.classList.add('material-icons')
+    arrowElement.classList.add('arrow')
+    arrowElement.classList.add('rotate')
+    arrowElement.addEventListener('click', () => {
+        expandNav('main');
+    })
+    arrowElement.textContent = 'expand_more';
+
     detailsContainer = document.createElement('div');
     detailsContainer.classList.add('details-container');
 
+    statsContainer = document.createElement('div');
+    statsContainer.classList.add('stats-container');
+
     createBannerItem(champData.id);
+    mainSection.appendChild(arrowElement);
     mainSection.appendChild(detailsContainer);
+    mainSection.appendChild(statsContainer);
     createDetails(champData);
+    createStats(champData);
 }
 
 
@@ -95,7 +111,6 @@ const filterSearch = () => {
 
 // CREATES THE HEADING, TEXT AND TITLE FOR THE INDIVIDUAL PAGE.
 const createDetails = (data) => {
-    console.log(data);
     const detailsContainer = document.querySelector('.details-container');
 
     // CREATION OF ELEMENTS
@@ -106,7 +121,6 @@ const createDetails = (data) => {
     const champName = document.createElement('h1');
     champName.style
     champName.textContent = data.name;
-    console.log(champName);
 
     const title = document.createElement('span');
     title.textContent = data.title;
@@ -125,7 +139,49 @@ const createDetails = (data) => {
     detailsContainer.appendChild(container);
     detailsContainer.appendChild(horizontalLine);
     detailsContainer.appendChild(lorePara);
-    console.log(detailsContainer);
+}
+
+// STATS SECTION
+
+const createStats = (data) => {
+    const statsContainer = document.querySelector('.stats-container');
+
+    const infoHeader = document.createElement('h2');
+    infoHeader.textContent = 'INFO';
+    const infoDiv = document.createElement('div');
+
+    const statHeader = document.createElement('h2');
+    statHeader.textContent = 'STATS';
+    const statDiv = document.createElement('div');
+
+    // GENERATE THE INFORMATION
+    for (const [key, value] of Object.entries(data.info)) {
+        p = document.createElement('p');
+        p.textContent = `${key.toUpperCase()}: `;
+
+        s = document.createElement('span');
+        s.textContent = value;
+
+        p.appendChild(s);
+        infoDiv.appendChild(p);
+    }
+
+    // GENERATE THE STATS
+    for (const [key, value] of Object.entries(data.stats)) {
+        p = document.createElement('p');
+        p.textContent = `${key.toUpperCase()}: `;
+
+        s = document.createElement('span');
+        s.textContent = value;
+
+        p.appendChild(s);
+        statDiv.appendChild(p);
+    }
+
+    statsContainer.appendChild(infoHeader);
+    statsContainer.appendChild(infoDiv);
+    statsContainer.appendChild(statHeader);
+    statsContainer.appendChild(statDiv);
 }
 
 fetchChampions();

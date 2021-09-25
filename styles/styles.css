@@ -189,7 +189,8 @@
     margin-left: 1em;
   }
   .details-container .lore {
-    margin-left: 0;
+    margin: 0;
+    margin-top: 1em;
     text-align: left;
     max-width: none;
   }
@@ -268,6 +269,9 @@
     gap: 2em;
     margin: 0;
     width: 100%;
+  }
+  .stats-container h2 {
+    margin-top: 2em;
   }
 }
 

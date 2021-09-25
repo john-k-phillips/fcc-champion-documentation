@@ -40,9 +40,13 @@ const createListItem = (data) => {
 
 // REGENERATE BASED ON NEW CHAMPION DATA.
 const regenInfo = (champData) => {
-    console.log(champData);
     mainSection.innerHTML = '';
+    detailsContainer = document.createElement('div');
+    detailsContainer.classList.add('details-container');
+
     createBannerItem(champData.id);
+    mainSection.appendChild(detailsContainer);
+    createDetails(champData);
 }
 
 
@@ -85,6 +89,43 @@ const filterSearch = () => {
             li[i].style.display = 'none';
         }
     }
+}
+
+// --- DETAILS SECTION ---
+
+// CREATES THE HEADING, TEXT AND TITLE FOR THE INDIVIDUAL PAGE.
+const createDetails = (data) => {
+    console.log(data);
+    const detailsContainer = document.querySelector('.details-container');
+
+    // CREATION OF ELEMENTS
+    const container = document.createElement('div');
+    container.classList.add('title');
+
+
+    const champName = document.createElement('h1');
+    champName.style
+    champName.textContent = data.name;
+    console.log(champName);
+
+    const title = document.createElement('span');
+    title.textContent = data.title;
+
+    const horizontalLine = document.createElement('div');
+    horizontalLine.classList.add('horizontal-line');
+
+    const lorePara = document.createElement('p');
+    lorePara.textContent = data.blurb;
+    lorePara.classList.add('lore');
+
+    // APPENDING
+    container.appendChild(champName);
+    container.appendChild(title);
+
+    detailsContainer.appendChild(container);
+    detailsContainer.appendChild(horizontalLine);
+    detailsContainer.appendChild(lorePara);
+    console.log(detailsContainer);
 }
 
 fetchChampions();

@@ -57,7 +57,7 @@
 .arrow {
     margin: 30px auto;
     width: 100%;
-    font-size: 2em;
+    color: $clr-primary;
     text-align: center;
 
     cursor: pointer;
@@ -78,6 +78,7 @@
         ul {
             margin-top: 2em;
             li {
+                cursor: pointer;
                 &:hover {
                     background-color: $clr-primary;
                 }

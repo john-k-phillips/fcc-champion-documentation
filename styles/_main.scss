@@ -22,15 +22,6 @@
         &:first-letter {
             font-size: 1.5em;
         }
-        &::before {
-            content: 'Fighter, Tank';
-            color: $clr-light-secondary;
-            font-size: 0.4em;
-            position: absolute;
-            top: 15%;
-            left: 40%;
-            margin: auto;
-        }
     }
 
     span {

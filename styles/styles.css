@@ -128,16 +128,6 @@
   font-size: 1.5em;
 }
 
-.details-container h1::before {
-  content: 'Fighter, Tank';
-  color: #515151;
-  font-size: 0.4em;
-  position: absolute;
-  top: 15%;
-  left: 40%;
-  margin: auto;
-}
-
 .details-container span {
   color: #515151;
 }

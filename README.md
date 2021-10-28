@@ -1,7 +1,7 @@
 ﻿﻿<h1>Champion Documentation</h1>
  This is a solution to the
 
-[freeCodeCamp "Build a Tribute Page" challenge.](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page).
+[freeCodeCamp "Technical Documentation Page" challenge.](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page).
 
 freeCodeCamp is a non-profit organization that consists of an interactive learning web platform, an online community forum, chat rooms, online publications and local organizations that intend to make learning web development accessible to anyone.
 

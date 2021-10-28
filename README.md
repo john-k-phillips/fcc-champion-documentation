@@ -13,13 +13,13 @@ freeCodeCamp is a non-profit organization that consists of an interactive learni
   <img src=https://img.shields.io/badge/live%20demo-lightgreen?&style=for-the-badge&logo=html5&logoColor=333 alt=live-link style="margin-bottom: 5px;" />
 </a>
 
-![](./images/champ-screenshot.png)
+![](./assets/champ-screenshot.png)
 
 <h2>Overview</h2>
 <p>
-    I decided to take a little spin on the initial challenge.
+I decided to take a little spin on the initial challenge.
 
-    I wanted to create something using an API and as a fan of Riot games, decided a little champion documentation would be fitting.
+I wanted to create something using an API and as a fan of Riot games, decided a little champion documentation would be fitting.
 
-    The design and overall feel of the project is not pe
+The design and overall feel of the project is not pe
 </p>

@@ -21,5 +21,5 @@ I decided to take a little spin on the initial challenge.
 
 I wanted to create something using an API and as a fan of Riot games, decided a little champion documentation would be fitting.
 
-The design and overall feel of the project is not pe
+The design and overall feel of the project is not perfect; however the intention was to use a RESTful API.
 </p>
